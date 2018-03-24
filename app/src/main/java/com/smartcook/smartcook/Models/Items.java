@@ -11,6 +11,7 @@ public class Items implements Serializable {
     String foodItems;
     String recipeName;
     String receipeSuggestion;
+    String directions;
 
     public Items(String datePurchased, String foodItems) {
         this.datePurchased = datePurchased;
@@ -47,5 +48,13 @@ public class Items implements Serializable {
 
     public void setRecipeName(String recipeName) {
         this.recipeName = recipeName;
+    }
+
+    public String getDirections() {
+        return directions;
+    }
+
+    public void setDirections(String directions) {
+        this.directions = directions;
     }
 }

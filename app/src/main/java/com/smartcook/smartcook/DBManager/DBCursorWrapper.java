@@ -22,10 +22,12 @@ public class DBCursorWrapper extends CursorWrapper {
         String foodItems = cursor.getString(cursor.getColumnIndex(DBSchema.ItemTable.Cols.FOODITEMS));
         String recipeName = cursor.getString(cursor.getColumnIndex(DBSchema.ItemTable.Cols.RECIPENAME));
         String recipe = cursor.getString(cursor.getColumnIndex(DBSchema.ItemTable.Cols.RECIPE));
+        String direct = cursor.getString(cursor.getColumnIndex(DBSchema.ItemTable.Cols.DIRECTIONS));
 
         Items item = new Items(date, foodItems);
         item.setRecipeName(recipeName);
         item.setReceipeSuggestion(recipe);
+        item.setDirections(direct);
 
         return item;
 

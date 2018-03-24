@@ -20,6 +20,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 + DBSchema.ItemTable.Cols.DATE + ", "
                 + DBSchema.ItemTable.Cols.FOODITEMS + ", "
                 + DBSchema.ItemTable.Cols.RECIPE+ ", "
+                + DBSchema.ItemTable.Cols.DIRECTIONS+ ", "
                 + DBSchema.ItemTable.Cols.RECIPENAME + ")");
     }
 

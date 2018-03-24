@@ -15,6 +15,7 @@ public class DBSchema {
             public static final String FOODITEMS = "fooditems";
             public static final String RECIPENAME = "recipename";
             public static final String RECIPE = "recipe";
+            public static final String DIRECTIONS = "directions";
         }
     }
 }
