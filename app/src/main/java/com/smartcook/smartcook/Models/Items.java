@@ -1,18 +1,20 @@
 package com.smartcook.smartcook.Models;
 
+import java.io.Serializable;
+
 /**
  * Created by Kennedy Agusi on 3/24/2018.
  */
 
-public class Items {
+public class Items implements Serializable {
     String datePurchased;
     String foodItems;
+    String recipeName;
     String receipeSuggestion;
 
-    public Items(String datePurchased, String foodItems, String receipeSuggestion) {
+    public Items(String datePurchased, String foodItems) {
         this.datePurchased = datePurchased;
         this.foodItems = foodItems;
-        this.receipeSuggestion = receipeSuggestion;
     }
 
     public String getDatePurchased() {
@@ -37,5 +39,13 @@ public class Items {
 
     public void setReceipeSuggestion(String receipeSuggestion) {
         this.receipeSuggestion = receipeSuggestion;
+    }
+
+    public String getRecipeName() {
+        return recipeName;
+    }
+
+    public void setRecipeName(String recipeName) {
+        this.recipeName = recipeName;
     }
 }

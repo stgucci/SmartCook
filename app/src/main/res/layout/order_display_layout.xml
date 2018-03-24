@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Order_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Date: "
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/Order_Items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Items: "
+        android:textSize="20sp"
+        android:textAlignment="center"/>
+
+</LinearLayout>
